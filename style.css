@@ -5,7 +5,7 @@ body {
     text-align: center;
     color: white;
 
-    background: url('adhiyogi.jpg') no-repeat center center fixed;
+    
     background-size: cover;
     backdrop-filter: brightness(0.6);
 }
@@ -78,5 +78,28 @@ body {
     border-radius: 20px;
     margin: 20px auto;
     box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+h1 {
+    font-size: 48px;
+    margin-top: 60px;
+    text-shadow: 0 0 10px black;
+}
+
+.subtitle {
+    font-size: 24px;
+    margin-top: 10px;
+    text-shadow: 0 0 10px black;
+}
+@media (max-width: 600px) {
+    h1 {
+        font-size: 32px;
+    }
+    .subtitle {
+        font-size: 18px;
+    }
+    .menu a {
+        font-size: 18px;
+        padding: 12px 20px;
+    }
 }
 
