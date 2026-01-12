@@ -6,27 +6,28 @@ body {
     color: white;
     }
 .menu {
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-background: rgba(0,0,0,0.4);
-    padding: 20px;
-    display: inline-block;
-    border-radius: 15px;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
 }
-
 .menu a {
-    padding: 15px 30px;
+    padding: 20px 0;
     background: rgba(0,0,0,0.6);
     border-radius: 15px;
-    font-size: 22px;
+    font-size: 26px;
     color: white;
     text-decoration: none;
     box-shadow: 0 8px 20px rgba(0,0,0,0.4);
     transition: 0.3s ease;
+    display: block;
+    width: 100%;
+    text-align: center;
 }
+
 
 .menu a:hover {
     background: #00c6ff;
@@ -100,5 +101,8 @@ h1 {
     .menu a {
         font-size: 18px;
         padding: 12px 20px;
+    }
+ .menu {
+        grid-template-columns: 1fr;
     }
 }
